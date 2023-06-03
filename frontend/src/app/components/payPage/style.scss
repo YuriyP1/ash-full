@@ -1,0 +1,60 @@
+.headerMenu{
+    margin: 0 auto;
+    width: 100%;
+    // height: 133px;
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 41px;
+    margin-bottom: 70px;
+    overflow: hidden;
+    display: flex;
+
+    @media (max-width: 1180px) {
+        border-radius: 30px;
+        margin-bottom: 25px;
+    }
+
+    &-search{
+        width: 20%;
+        input{
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            border: 0;
+            height: 40%;
+            padding-left: 20px;
+        }
+    }
+    &-items{
+        width: 80%;
+        height: 100px;
+
+        @media (max-width: 1180px) {
+            width: 100%;
+        }
+
+        &__position{
+            height: 60%;
+            width: 100%;
+            border: 1px black solid;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover{
+                transition: 0.3s;
+                font-weight: 600;
+                scale: 1.05;
+                box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+            }
+            
+            &.active{
+                transition: 0.3s;
+                background-color: #da9f4733;
+            }
+        }
+    }
+    .swiper{
+        height: 100%;
+    }
+}

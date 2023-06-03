@@ -1,0 +1,247 @@
+{
+    "menu": [
+        {  
+            "title": "РОЛ ФІЛАДЕЛЬФІЯ З ЛОСОСЕМ",
+            "chapter": "roll",
+            "description": "Філадельфія - це апетитний та смачний суші-рол зі свіжим лососем, м'яким сиром та кунжутом, який точно змусить вас захотіти його скуштувати.",
+            "weight": "310",
+            "amount": 1,
+            "number": 8,
+            "price": 175,
+            "contain": ["Лосось", "Огірок", "Сир Філадельфія", "Норі"],
+            "image": "images/menu/filadelfia-salmon/main.jpg",
+            "id": "roll-filadelfia-salmon"
+        },
+        {
+            "title": "РОЛ ФІЛАДЕЛЬФІЯ З ТУНЦЕМ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "290",
+            "amount": 1,
+            "number": 8,
+            "price": 155,
+            "contain": ["Тунець", "Огірок", "Сир Філадельфія", "Норі", "Соус унагі"],
+            "image": "images/menu/filadelfia-tunec/main.jpg",
+            "id": "roll-fila-tunec"
+        },
+        {
+            "title": "РОЛ ФІЛАДЕЛЬФІЯ З ТИГРОВОЮ КРЕВЕТКОЮ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "290",
+            "amount": 1,
+            "number": 8,
+            "price": 145,
+            "contain": ["Тигрова креветка", "Огірок", "Сир Філадельфія", "Рис", "Норі"],
+            "image": "images/menu/filadelfia-chrimp/main.jpg",
+            "id": "roll-fila-chrimp"
+        },
+        {  
+            "title": "РОЛ ФІЛАДЕЛЬФІЯ З ВУГРОМ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "310",
+            "amount": 1,
+            "number": 8,
+            "price": 180,
+            "contain": ["Вугор", "Огірок", "Сир Філадельфія", "Рис", "Норі", "Соус унагі"],
+            "image": "images/menu/filadelfia-ugor/main.jpg",
+            "id": "roll-fila-ugor"
+        },
+        {  
+            "title": "РОЛ КАЛІФОРНІЯ В ІКРІ З ЛОСОСЕМ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "210",
+            "amount": 1,
+            "number": 8,
+            "price": 145,
+            "contain": ["Лосось", "Огірок", "Авокадо", "Японський майонез", "Ікра тобіко", "Рис", "Норі"],
+            "image": "",
+            "id": "roll-california-salmon"
+        },
+        {  
+            "title": "РОЛ КАЛІФОРНІЯ В ІКРІ З ВУГРОМ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "210",
+            "amount": 1,
+            "number": 8,
+            "price": 155,
+            "contain": ["Вугор", "Огірок", "Авокадо", "Японський майонез", "Ікра тобіко", "Рис", "Норі"],
+            "image": "images/menu/california-vugor/main.jpg",
+            "id": 5
+        },
+        {  
+            "title": "РОЛ КАЛІФОРНІЯ В КУНЖУТІ",
+            "chapter": "roll",
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "210",
+            "amount": 1,
+            "number": 8,
+            "price": 155,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D0%B8/A3802941-306C-11ED-B49D-176D6E48CD1B-1969%D1%851100_0027_%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BB%D0%BE%D1%81%D0%BE%D1%81%D0%B5%D0%BC-%D0%B2-%D0%B8%D0%BA%D1%80%D0%B5.png?alt=media&token=82da24d1-22b2-4267-b03d-e83da268f3b0&w=1280&h=700&format=webp&mode=fit&q=59",
+            "id": 6
+        },
+        {
+            "title": "СЕТ ДРАКОНІВ",
+            "chapter": "set",
+            "contain": ["Червоний Дракон", "Чорний Дракон", "Зелений Дракон", "Королівський Дракон"],
+            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "weight": "890",
+            "amount": 1,
+            "number": 58,
+            "price": 850,
+            "image": "https://osama.com.ua/wp-content/uploads/2022/11/600x600xBez-nazvy-2_Montazhna-oblast-1-kopiya-10.png.pagespeed.ic.Iq_BJ0onS0.png",
+            "id": "dragon-set"
+        },
+        {
+            "title": "СЕТ ЛОСОСЕВИЙ",
+            "chapter": "set",
+            "contain": ["Каліфорнія з лососем", "Червоний дракон", "Рол зі смаженим лососем", "Макі з лососем", "Суші з лососем 3 шт", "Гункан з лососем 3 шт"],
+            "description": "",
+            "weight": "1150",
+            "amount": 1,
+            "number": 48,
+            "price": 1250,
+            "image": "https://smakyaponiyi.com.ua/wp-content/uploads/2022/09/9-6.jpg",
+            "id": "lososeviy-set"
+        },
+        {
+            "title": "ФІРМОВИЙ СEN ASH",
+            "chapter": "set",
+            "contain": ["Каліфорнія з лососем", "Рол Хіяші", "Канада рол", "Чідзу рол", "Ебі рол", "Краб рол Грін"],
+            "description": "",
+            "weight": "1150",
+            "amount": 1,
+            "number": 48,
+            "price": 1400,
+            "image": "https://smakyaponiyi.com.ua/wp-content/uploads/2022/09/9-6.jpg",
+            "id": "ash-set"
+        },
+        {
+            "title": "СЕТ НА ДВОХ",
+            "chapter": "set",
+            "contain": ["Рол в кунжуті з тунцем", "Каліфорнія з вугрем", "Канада Рол", "Гункан з тунцем 2", "Гункан з вакаме 2"],
+            "description": "",
+            "weight": "1150",
+            "amount": 1,
+            "number": 48,
+            "price": 1400,
+            "image": "https://smakyaponiyi.com.ua/wp-content/uploads/2022/09/9-6.jpg",
+            "id": "2-set"
+        },
+        {
+            "title": "БЛЕК СЕТ",
+            "chapter": "set",
+            "contain": ["Чорний в кунжуті", "Блек теріякі", "Чілі рол", "Чорний краб", "Рол Нагоя"],
+            "description": "",
+            "weight": "1150",
+            "amount": 1,
+            "number": 48,
+            "price": 1400,
+            "image": "https://smakyaponiyi.com.ua/wp-content/uploads/2022/09/9-6.jpg",
+            "id": "ash-set"
+        },
+        {
+            "title": "ГУНКАН З ВАКАМЕ",
+            "chapter": "guncan",
+            "contain": ["Рис", "Вакаме"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://kyiv.smaki-maki.com/wp-content/uploads/sites/10/2020/06/gunkan-z-hiyashi-vakame-scaled.jpg",
+            "id": "vacame-gunkan"
+        },
+        {
+            "title": "ГУНКАН З ІКРОЮ",
+            "chapter": "guncan",
+            "contain": ["Рис", "Ікра"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://sushifan.com.ua/image/cache/catalog/gunkan_B/Gunkan_ikura-500x500.jpg",
+            "id": "ikra-gunkan"
+        },
+        {
+            "title": "ГУНКАН З ЛОСОСЕМ",
+            "chapter": "guncan",
+            "contain": ["Рис", "Ікра"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://sushifan.com.ua/image/cache/catalog/gunkan_B/Gunkan_ikura-500x500.jpg",
+            "id": "salmon-gunkan"
+        },
+        {
+            "title": "ГУНКАН З ТУНЦЕМ",
+            "chapter": "guncan",
+            "contain": ["Рис", "Ікра"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://sushifan.com.ua/image/cache/catalog/gunkan_B/Gunkan_ikura-500x500.jpg",
+            "id": "tunec-gunkan"
+        },
+        {
+            "title": "АСОРТІ (ЛОСОСЬ, ВУГОР, ТУНЕЦЬ)",
+            "chapter": "guncan",
+            "contain": ["Рис", "Ікра"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://sushifan.com.ua/image/cache/catalog/gunkan_B/Gunkan_ikura-500x500.jpg",
+            "id": "assorti-gunkan"
+        },
+        {
+            "title": "СУШІ З ЛОСОСЕМ",
+            "chapter": "sushi",
+            "contain": ["Рис", "Лосось"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://966.ua/upload/iblock/4df/4df87a64c1549ab8fab6355cfcdf2db1.jpg",
+            "id": "sushi-salmon"
+        },
+        {
+            "title": "СУШІ З ВУГРОМ",
+            "chapter": "sushi",
+            "contain": ["Рис", "Лосось"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://yaposhka.com.ua/media/catalog/product/cache/b8d5666ecec5f6597a39ca6d2a6b3110/f/i/file_153.webp",
+            "id": "sushi-vugor"
+        },
+        {
+            "title": "СУШІ З ТУНЦЕМ",
+            "chapter": "sushi",
+            "contain": ["Рис", "Лосось"],
+            "description": "",
+            "weight": "70",
+            "amount": 1,
+            "number": 1,
+            "price": 60,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUjQpyT8NF2MoAX7--WVTqI0N5jDeLP465dgEhz2Z2Pkt6z2VArLrexZgmHcJI_BoJMI&usqp=CAU",
+            "id": "sushi-tunec"
+        }
+
+
+
+
+    ]
+}

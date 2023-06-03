@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sushi chaos
+* source:	https://sketchfab.com/3d-models/sushi-chaos-baaf2a3a26914e96b937aea8c81a7829
+* author:	eccitatore (https://sketchfab.com/eccitatore)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sushi chaos" (https://sketchfab.com/3d-models/sushi-chaos-baaf2a3a26914e96b937aea8c81a7829) by eccitatore (https://sketchfab.com/eccitatore) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,89 @@
+.asideBar{
+    animation: fadeIn-asideBar 1s;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 0.1);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 1180px) {
+        width: 85%;
+    }
+
+    &-head{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &__basket{
+            &__count{
+                position: absolute;
+            }
+        }
+    }
+
+    &-content{
+        padding: 5%;
+        max-height: 50%;
+        overflow: auto; 
+    }
+
+    &-order{
+        // position: absolute;
+        // bottom: 0;
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &__sum{
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        &__buy{
+            text-decoration: none;
+            color: black;
+            background: rgba(217, 217, 217, 0.5);
+            box-shadow: 0px -20px 22px rgba(0, 0, 0, 0.1);
+            border-radius: 49px;
+            padding: 20px 0px 20px 0px;
+            width: 90%;
+            font-size: 23px;
+            text-align: center;
+        }
+    }
+}
+
+.asideBar-bg{
+    position: fixed;
+    z-index: 199;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    // left: 0;
+    right: 35%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+@keyframes fadeIn-asideBar {
+    from{
+        translate: 100% 0;
+    }
+
+    to{
+        translate: 0 0;
+    }
+}
+@keyframes fadeOut-asideBar {
+    from{
+        translate: 0 0;
+    }
+
+    to{
+        translate: 100% 0;
+    }
+}

@@ -1,0 +1,114 @@
+.cardMenu{
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.1);
+    // backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 27px;
+    width: 32%;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+   
+    text-decoration: none;
+    color: #000000;
+    
+
+    @media (max-width: 1180px) {
+        width: 100%;
+    }
+
+    .cardMenu-content{
+        padding: 30px;
+    }
+
+    &-imageWrap{
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+
+        img{
+            transition: 0.5s;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            @media (min-width: 1180px) {
+                &:hover{
+                    transition: 0.3s;
+                    scale: 1.03;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &-titleAndDescription{
+        border-left: 5px #C23231 solid;
+        color: #000000;
+        padding-left: 20px;
+        margin-bottom: 20px;
+
+        &-title{
+            transition: 0.5s;
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 10px;
+
+            @media (min-width: 1180px) {
+                &:hover{
+                    transition: 0.5s;
+                    translate: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+        &-description{
+            font-size: 14px;
+        }
+    }
+    &-props-container{
+        border-left: 5px #C23231 solid;
+        color: #FFFFFF;
+        font-size: 14px;
+        display: flex;
+        padding-left: 20px;
+
+        margin-bottom: 37px;
+        &__weight{
+            margin-right: 30px;
+        }
+        // &__amount{
+        //     font-size: ;
+        // }
+
+    }
+
+    &-btnAndPrice{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-btn{
+        transition: 0.1s;
+        background: #C23231;
+        color: #FFFFFF;
+        padding: 15px 25px 15px 25px;
+        width: 60%;
+        border-radius: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 1180px) {
+            &:hover{
+                transition: 0.3s;
+                cursor: pointer;
+                transform: scale(1.05);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.267);
+                background-color: #b84040;
+            }   
+        }
+    }
+
+    &-price{
+        width: 40%;
+    }
+}

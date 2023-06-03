@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #293636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Montserrat';
+    @media (max-width: 1180px) {
+      padding: 0;
+    }
+
+    .app-container{
+        position: relative;
+        border-radius: 75px;
+        padding: 30px;
+        width: 90vw;
+        position: relative;
+        overflow: hidden;
+        padding-top: 150px;
+        background-image: url('../../public/bg/bg-main.jpg');
+        background-repeat: repeat-y;
+        background-size: cover;
+        // background-size: auto;
+        background-position: 0 0, 0 5px;
+        // filter: blur(10px);
+        transition: background-image 0.5s ease-in-out;
+
+        @media (max-width: 1180px) {
+          background-attachment: fixed; /* добавляем это свойство */
+          width: 100vw;
+          border-radius: 0px;
+          padding: 150px 0 0 0;
+        }
+    } 
+}
+.backgoundInner{
+  background: rgba(234, 234, 234, 0.3);
+  border-radius: 85px;
+  padding: 77px;
+  padding-bottom: 100px;
+
+  @media (max-width: 1180px) {
+      padding: 20px;
+      border-radius: 45px;
+  } 
+}
+.FB9950{
+    color: #FB9950;
+}
+.noise {
+  background-color: #7c7c7c; /* Колір фону */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="none"/><path d="M-10,50 q30,-30 60,0 t60,0 q30,0 30,30 t-30,30 q-10,0 -10,-10 t-10,-10 t-10,-10 t-10,-10 q-20,20 -40,0 t-40,0 q-20,0 -20,-20 t-20,-20 t-20,-20 t-20,-20 q0,20 -10,20 t-10,20 t-10,20 t-10,20" fill="%23ffffff" opacity="0.2"/></svg>'); /* шаблон шуму */
+}
+.limitWidthSecond {
+    max-width: 1325px;
+    margin: 0 auto;
+    // margin-left: 20px;
+    // margin-right: 20px;
+    // border-radius: 40px;
+    // padding-bottom: 100px;
+    // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  
+    @media (min-width: 360px) and (max-width: 1440px) {
+    //   padding-top: calc(50px + (84 - 50) * ((100vw - 360px) / ( 1440 - 360)));
+    //   padding-bottom: calc(50px + (100 - 50) * ((100vw - 360px) / ( 1440 - 360)));
+    }
+}
+
+.limitWidth {
+    margin: 0 auto;
+    max-width: 1200px;
+  
+    @media (min-width: 360px) and (max-width: 1440px) {
+      max-width: calc(350px + (1200 - 350) * ((100vw - 360px) / (1440 - 360)));
+    }
+  }
+.limitWidthHeader {
+    margin: 0 auto;
+    max-width: 1325px;
+  
+    @media (min-width: 360px) and (max-width: 1440px) {
+      max-width: calc(350px + (1200 - 350) * ((100vw - 360px) / (1440 - 360)));
+    }
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gradient {
+    background: linear-gradient(to right, #304242, #5eac8c, #467471); /* Градієнт, який потрібно переливати */
+    background-size: 600% 100%; /* Розмір градієнту */
+    animation: gradient 30s ease infinite; /* Анімація */
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%; /* Початкова позиція градієнту */
+    }
+    50% {
+      background-position: 100% 50%; /* Кінцева позиція градієнту */
+    }
+    100% {
+      background-position: 0% 50%; /* Початкова позиція градієнту */
+    }
+  }

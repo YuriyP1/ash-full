@@ -1,0 +1,50 @@
+.checkForm{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px 30px 100px 30px;
+    position: relative;
+    box-sizing: border-box;
+
+    @media (max-width: 674px) {
+        width: 100%;
+    }
+
+    &-title{
+        margin-bottom: 20px;
+    }
+    &-position{
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+
+        &__number{
+            opacity: 0.6;
+        }
+
+        &__title{
+            max-width: 50%;
+        }
+        &__amount{
+            font-size: 12px;
+            position: absolute;
+            right: 23%;
+        }
+        &__price{
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &__sum{
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 60px);
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+        border-top: 1px black solid;
+    }
+}

@@ -1,0 +1,123 @@
+.fullCard{
+    width: 100%;
+    animation: fadeInFullCard 0.6s;
+
+    &-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1180px) {
+            display: block;
+        }
+    }
+
+    &-imageWrap{
+        width: 50%;
+        border-radius: 20px;
+        overflow: hidden;
+        @media (max-width: 1180px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-content{
+        width: 45%;
+
+        @media (max-width: 1180px) {
+            width: 100%;
+        }
+
+        &__title{
+            margin-bottom: 40px;
+
+            @media (max-width: 1180px) {
+                font-size: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__underTitle{
+            border-left: 5px solid #C23231;
+            padding-left: 30px;
+            font-size: 2vh;
+        }
+
+        &__description{
+            font-size: 23px;
+            margin-bottom: 40px;
+
+            @media (max-width: 1180px) {
+                font-size: 16px;
+            }
+        }
+
+        &-btnAndPrice{
+            display: flex;
+            justify-content: space-between;
+            p{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                font-size: 23px;
+            }
+        }
+
+        &__btn{
+            background: #C23231;
+            color: #FFFFFF;
+            padding: 15px 25px 15px 25px;
+            width: 60%;
+            border-radius: 10px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (min-width: 1180px) {
+                &:hover{
+                    transition: 0.3s;
+                    scale: 1.02;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+
+    &-ingredients{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .ingredient{
+            padding: 10px 20px 10px 20px;
+            margin: 5px 5px;
+            border: 1px rgba(0, 0, 0, 0.3) solid;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 10px;
+            @media (max-width: 1180px) {
+                margin: 3px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@keyframes fadeInFullCard {
+    from{
+        scale: 0.7;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
