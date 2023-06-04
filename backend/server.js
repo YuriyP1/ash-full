@@ -102,7 +102,7 @@ app.post('/api/fast-call', (req, res) => {
 
 
 // app.use('/api', router);
-app.use(express.static(path.join(__dirname, '/../frontend/build')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 app.get('*', (_, res) => {
   res.header('Access-Control-Allow-Origin', '*');
