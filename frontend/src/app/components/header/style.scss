@@ -13,6 +13,15 @@
     height: 86px;
     color: white;
 
+    li{
+        font-family: 'Montserrat';
+        @media (min-width: 1180px) {
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
     a{
         text-decoration: none;
         color: #FFFFFF;
@@ -127,8 +136,24 @@
             width: 20%;
 
             &__count{
+ 
                 position: absolute;
             }
         }
+    }
+}
+
+@keyframes countAnimation {
+    from{
+        scale: 1;
+        color: #FFFFFF;
+    }
+    20%{
+        scale: 1.7;
+        color: #e1c01b;
+    }
+    to{
+        scale: 1;
+        color: #FFFFFF
     }
 }

@@ -10,7 +10,7 @@ const ContainerMenu = ({ section, filter, menuListFiltered = '' }) => {
         <div className="ContainerMenu">
             {   
                 menuList.map((item, _index)=>{
-                        return <CardMenu key={item.id + Math.random()}
+                        return <CardMenu key={item.id + _index}
                             image={item.image}
                             title={item.title}
                             price={item.price}

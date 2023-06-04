@@ -5,7 +5,7 @@ import useWindowSize from '../../hook/resizeWindow'
 import { Link } from 'react-router-dom'
 
 import './style.scss'
-import phoneTooltip from '../phoneTooltip'
+import phoneTooltip, { disposePhoneTooltip } from '../phoneTooltip'
 
 const Header = ({ asideBar }) =>{
 
@@ -13,8 +13,17 @@ const Header = ({ asideBar }) =>{
     const header = useRef()
     const [style, setStyle] = useState(false)
     const [isFullMenu, setFullMenu] = useState(false)
-    const [isPhoneToolTip, setPhoneToolTip] = useState()
+    const [isPhoneToolTip, setPhoneToolTip] = useState(false)
     const count = useSelector(state => state.store.count)
+
+    const countRef = useRef()
+
+    useEffect(()=>{
+        countRef.current.style.animation = "countAnimation 1s forwards"
+        setTimeout(()=>{
+            countRef.current.style.animation = ""
+        }, 1000)
+    }, [count])
   
     useEffect(()=>{
         window.addEventListener('scroll', function(e) {
@@ -46,7 +55,12 @@ const Header = ({ asideBar }) =>{
     }
 
     const openPhoneTooltip = () => {
-        phoneTooltip()
+        setPhoneToolTip(!isPhoneToolTip)
+        if(!isPhoneToolTip){
+            phoneTooltip()
+        } else {
+            disposePhoneTooltip()
+        }
     }
 
     return(
@@ -103,7 +117,7 @@ const Header = ({ asideBar }) =>{
                     onClick={asideBar}
                 >
                     <Icons icon='basket' style={{position: 'absolute'}}/>
-                    <div className="header-content-basket__count">
+                    <div ref={countRef} className="header-content-basket__count">
                         {count}
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import menu from '../../../../assets/menu/menu.json'
 
 import './style.scss'
 import { useDispatch } from 'react-redux'
+import { SERVER_ADRESS } from '../../../../serverAdress'
 
 const FullCard = ({cardId}) => {
 
@@ -25,7 +26,7 @@ const FullCard = ({cardId}) => {
         <div className="fullCard limitWidthSecond">
             <div className="fullCard-container">
                 <div className='fullCard-imageWrap'>
-                    <img src={`http://localhost:3001/${card.image}`} alt="icon" />
+                    <img src={`${SERVER_ADRESS}/${card.image}`} alt="icon" />
                 </div>
                 <div className='fullCard-content'>
                     <div className="fullCard-content__title">
@@ -40,7 +41,7 @@ const FullCard = ({cardId}) => {
                         {/* <p className='center'>ІНГРЕДІЄНТИ</p> */}
                         {
                             card.contain?.map((item, _index)=>(
-                                <div className="ingredient">
+                                <div className="ingredient" key={item}>
                                     <p>
                                         {item}
                                     </p>

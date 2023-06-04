@@ -7,10 +7,16 @@
     margin-bottom: 70px;
     overflow: hidden;
     display: flex;
+    padding-right: 20px;
 
     @media (max-width: 1180px) {
         border-radius: 30px;
         margin-bottom: 25px;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
     }
 
     &-search{
@@ -47,7 +53,7 @@
             border: 1px black solid;
             font-weight: 500;
             font-size: 16px;
-            border-radius: 10px;
+            border-radius: 12px;
             cursor: pointer;
 
             &:hover{
@@ -74,6 +80,11 @@
 }
 
 .headerMenuMob{
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
     &-itemsMob{
         background: rgba(217, 217, 217, 0.7);
         border-radius: 41px;

@@ -1,20 +1,95 @@
 .phoneTooltip{
-    position:fixed;
-    min-width: 100%;
-    max-width: 100%;
-    height: 30vh;
+    position: fixed;
+    width: 100%;
+    height: 40vh;
     bottom: 0;
     left: 0;
-    padding: 10%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
     &-content{
-        background-color: pink;
-        // height: 100%;
-        // width: 100%;
+        z-index: 1000 !important;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        height: 90%;
+        width: 90%;
+        border-radius: 15px;
+        // padding: 10%;
+
+        .react-tel-input .form-control {
+            border-radius: 20px;
+            height: 45px;
+        }
+        .react-tel-input .flag-dropdown   {
+            border-radius: 15px 0 0 15px;
+            // background-color: #C23231;
+        }
+
+        &__final{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2d6979;
+            height: 90%;
+            width: 90%;
+            border-radius: 10px;
+            font-size: 4vw;
+        }
         
+        &-call{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 30%;
+
+            a{
+                font-family: 'Montserrat';
+                color: black;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: 25px;
+            }
+
+            button{
+                padding: 20px 0;
+                width: 80%;
+                background-color: #C23231;
+                color: aliceblue;
+                border: 0;
+                border-radius: 20px;
+            }
+        }
+
+        &-or{
+
+            p{
+                text-align: center;
+            }
+        }
+
+        &-fastCall{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 45%;
+
+            .react-tel-inpu{
+                padding-left: 20px !important;
+            }
+
+            button{
+                padding: 20px 0;
+                width: 80%;
+                background-color: #C23231;
+                color: aliceblue;
+                border: 0;
+                border-radius: 20px;
+            }
+        }
     }
 }

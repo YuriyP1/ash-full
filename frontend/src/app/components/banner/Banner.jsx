@@ -1,7 +1,4 @@
-// import { Canvas, useThree } from '@react-three/fiber'
-// import { useLoader } from '@react-three/fiber'
-// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-// import { OrbitControls } from '@react-three/drei'
+
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
@@ -45,21 +42,24 @@ const Banner = () =>{
                         <div className='banner-container'>
                             <div className="banner-content">
                                 <div>
-                                                                <span>СУШІ В <span className='FB9950'> ASH </span></span>
+                                <span>СУШІ В <span className='FB9950'> ASH </span></span>
                                 ДОСТАВЩИК <br/>
                                 <span></span>ВАШ
                                 </div>
                                 <div className="banner-visual" id='canvas__root'>
-                                <img className="banner-visual__image" src='images/banner/banner-image.png'/>
+                            
                             </div>
                                 <div className='banner-content__btn'>
                                     ЗІБРАТИ КОШИК
                                 </div>
                             </div>
-                            {/* <div className="banner-visual" id='canvas__root'>
+                            <div className="banner-visual" id='canvas__root'>
                                 <img className="banner-visual__image" src='images/banner/banner-image.png'/>
-                            </div> */}
+                            </div> 
                         </div>
+                        <div className="banner-visual" id='canvas__root'>
+                                <img className="banner-visual__image" src='images/banner/banner-image.png'/>
+                            </div> 
                     </SwiperSlide>
                     <SwiperSlide >
                     <div className='banner-container'>

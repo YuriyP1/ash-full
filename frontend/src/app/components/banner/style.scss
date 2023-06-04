@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         @media (max-width: 1180px) {
-            flex-direction: column;
+            // flex-direction: column;
         }
     }
     &-content{
@@ -40,10 +40,11 @@
             justify-content: center;
             align-items: center;
             margin-top: 50px;
-            margin: 20px;
+            // margin: 20px;
 
             @media (max-width: 1180px) {
                 padding: 15px;
+                font-size: 3vw;
             }
             
         }

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { Link, useRoutes } from 'react-router-dom'
 import ProductCard from '../../pages/productCard/ProductCard';
@@ -22,8 +23,12 @@ const CardMenu = ({ image, title, price, contain, description, weight, number, a
         image,
         id
     }
-    console.log(id, 'id')
 
+    useEffect(()=>{
+        // document.querySelector('.cardMenu button').addEventListener('click', function(event) {
+        //     event.preventDefault();
+        //   });          
+    }, [])
     const dispatch = useDispatch()
 
     const addPosition = (position) => {
@@ -33,22 +38,26 @@ const CardMenu = ({ image, title, price, contain, description, weight, number, a
     const routing = useRoutes(routes);
 
     return(
-        <Link to={`/product/${id}`} className="cardMenu" key={title}>
+        <div className="cardMenu" key={title + id}>
             <div className="cardMenu-imageWrap"
                 
                 // onClick={()=>{setFullCard(id)}}
             >
-                <img src={image} alt="image" />
+                <Link to={`/product/${id}`}>
+                    <img src={image} alt="image" />
+                </Link>
             </div>
             <div className="cardMenu-content">
                 <div className="cardMenu-titleAndDescription">
                     <div className="cardMenu-titleAndDescription-title"
                     >
-                        {title}
+                        <Link to={`/product/${id}`}>
+                            {title}
+                        </Link>
                     </div> 
                     <div className="cardMenu-titleAndDescription-description">
                         {contain?.map((item, _i)=>(
-                            <span>{item},&nbsp;</span>
+                            <span key={_i + item}>{item},&nbsp;</span>
                         ))}
                     </div> 
                 </div>
@@ -70,7 +79,7 @@ const CardMenu = ({ image, title, price, contain, description, weight, number, a
                 </div>
             </div>
             {routing}
-        </Link>
+        </div>
     )
 }
 

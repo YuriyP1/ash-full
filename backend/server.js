@@ -4,6 +4,7 @@ const userRouter = require('./routes/user.routes')
 const bodyParser = require('body-parser');
 const TelegramApi = require('node-telegram-bot-api');
 const cors = require('cors');
+const { createDiffieHellmanGroup } = require('crypto');
 const token ='6077774598:AAEJJaRdxoFdvp_A_RIn7CrOeS9nIqj1Zmw'
 
 const bot = new TelegramApi(token, {polling: true})
@@ -59,13 +60,17 @@ app.post('/api/send-order', (req, res) => {
 
   const result = positions.map(item => `      ${item.title} ${item.amount} шт`).join(',\n');
 
+  console.log(phone)
+
   bot.sendMessage(YURA,
     `
     ЗАМОВЛЕННЯ!${count}\n
     Ім'я: ${name}
-    Телефон: ${phone}
+    Телефон: ${phone.phone}
     Тип доставки: ${deliveryType}
-    Адреса: ${address} \n
+    Адреса: ${address}
+    Будинок: ${house}
+    Під'їзд: ${entrance} \n
     Позиції:
 ${result}
       _____________________
@@ -78,12 +83,26 @@ ${result}
   res.send('POST запрос принят');
 });
 
+app.post('/api/fast-call', (req, res) => {
+  const {
+    phone,
+   } = req.body;
+
+  bot.sendMessage(YURA,
+    `
+      Швидке замовлення: ${phone}
+    `
+    )
+
+
+    res.status(200).send("Дякуємо! Ми скоро зв'яжемось!");
+});
+
 
 
 
 // app.use('/api', router);
 app.use(express.static(path.join(__dirname, '/../frontend/build')));
-// app.use(express.static(`${__dirname}/../../client/ASH/build`));
 
 app.get('*', (_, res) => {
   res.header('Access-Control-Allow-Origin', '*');

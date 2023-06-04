@@ -9,9 +9,11 @@ const AsideBar = ({ createBar }) =>{
 
     const store = useSelector(state => state)
     const refAsideBar = useRef()
+    const refBg = useRef()
 
     const fadeOut = () =>{
         refAsideBar.current.style.animation = 'fadeOut-asideBar 0.5s ease'
+        refBg.current.style.animation = 'fadeOut-BG 0.5s ease'
         setTimeout(createBar, 500)
     }
     // console
@@ -24,7 +26,7 @@ const AsideBar = ({ createBar }) =>{
                     onClick={fadeOut}
                     >
                         <Icons icon='basket' style={{position:'absolute'}}/>
-                        <div className="asideBar-head__basket__count">
+                        <div className="asideBar-head__basket__count" style={{color: "white"}}>
                             {store.store.count}
                         </div>
                     </div>
@@ -53,7 +55,7 @@ const AsideBar = ({ createBar }) =>{
                     </Link>
                 </div>
             </div>
-            {/* <div className='asideBar-bg'/>         */}
+            <div className='asideBar-bg' ref={refBg} onClick={fadeOut}/>        
         </>
     )
 }

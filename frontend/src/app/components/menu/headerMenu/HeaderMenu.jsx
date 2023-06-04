@@ -77,7 +77,6 @@ const HeaderMenu = ({disposeFullCard}) => {
         dispatch({ type: 'SET_SECTION', section: store.section.section })
         if(store.section.section){
             setActive(store.section.section)
-            console.log('changed')
         } else {
             dispatch({ type: 'SET_SECTION', section: store.section.section })
         }
@@ -130,8 +129,8 @@ const HeaderMenu = ({disposeFullCard}) => {
                 >
                 {
                     items.map((item, _index)=>{
-                        return <SwiperSlide key={_index} className="center">
-                            <Link to="/" className={`headerMenu-items__position center ${active === item.section && 'active'}`}
+                        return <SwiperSlide key={item.title + _index} className="center">
+                            <Link to="/" key={item.title + _index} className={`headerMenu-items__position center ${active === item.section && 'active'}`}
                                 onClick={()=>{setSection(item.title)}}
                             >
                                 {item.title}
@@ -148,13 +147,11 @@ const HeaderMenu = ({disposeFullCard}) => {
                 {/* {store.section.section} */}
             {
                 items.map((item, _index)=>{
-                    return <>
-                        <Link to="/" className={`headerMenuMob-itemsMob__position center ${active === item.section && 'active'}`}
+                    return <Link to="/" key={item.title + _index} className={`headerMenuMob-itemsMob__position center ${active === item.section && 'active'}`}
                             onClick={()=>{setSection(item.title)}}
-                        >
-                            {item.title}
-                        </Link>
-                    </>
+                            >
+                        <div key={item.title}>{item.title}</div>
+                    </Link>
                 })
             }
             </div> 
@@ -162,7 +159,7 @@ const HeaderMenu = ({disposeFullCard}) => {
                 <div className='mobile-title__line'></div>
                     <p>{
                         items.map((obj, i)=>{
-                        if(obj.section === store.section.section) return <span>{obj.title}</span>
+                        if(obj.section === store.section.section) return <span key={obj.title}>{obj.title}</span>
                     })
                     }</p>
                 <div className='mobile-title__line'></div>

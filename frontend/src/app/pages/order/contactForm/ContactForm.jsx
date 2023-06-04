@@ -7,6 +7,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import './style.scss'
 import { useSelector } from 'react-redux';
+import { SERVER_ADRESS } from '../../../../serverAdress';
 export default function ContactForm () {
 
     const [name, setName] = useState("");
@@ -43,8 +44,7 @@ export default function ContactForm () {
       // Например, можно создать объект с данными и передать его в функцию-обработчик или контекст приложения.
       console.log(store.store)
 
-      fetch('http://185.235.218.108:3000/api/send-order', {
-      // fetch('http://192.168.33.64:3001/api/send-order', {
+      fetch(`${SERVER_ADRESS}/api/send-order`, {
       method: 'POST',
         headers: {
           'Content-Type': 'application/json'
