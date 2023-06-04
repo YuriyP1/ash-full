@@ -61,8 +61,8 @@ const HeaderMenu = ({disposeFullCard}) => {
             section: "set"
         },
         {
-            title: "ГУНКАНИ",
-            section: "guncan"
+            title: "МАКІ",
+            section: "maki"
         },
     ]
     const store = useSelector(state => state)
@@ -94,7 +94,7 @@ const HeaderMenu = ({disposeFullCard}) => {
                 break
             case 'СУШІ': dispatch({ type: 'SET_SECTION', section: 'sushi' })
                 break
-            case 'ГУНКАНИ': dispatch({ type: 'SET_SECTION', section: 'guncan' })
+            case 'МАКІ': dispatch({ type: 'SET_SECTION', section: 'maki' })
                 break
         }
     }

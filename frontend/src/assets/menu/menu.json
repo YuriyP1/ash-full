@@ -15,7 +15,7 @@
         {
             "title": "РОЛ ФІЛАДЕЛЬФІЯ З ТУНЦЕМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "290",
             "amount": 1,
             "number": 8,
@@ -27,7 +27,7 @@
         {
             "title": "РОЛ ФІЛАДЕЛЬФІЯ З ТИГРОВОЮ КРЕВЕТКОЮ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "290",
             "amount": 1,
             "number": 8,
@@ -39,7 +39,7 @@
         {  
             "title": "РОЛ ФІЛАДЕЛЬФІЯ З ВУГРОМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "310",
             "amount": 1,
             "number": 8,
@@ -51,7 +51,7 @@
         {  
             "title": "РОЛ КАЛІФОРНІЯ З ЛОСОСЕМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "210",
             "amount": 1,
             "number": 8,
@@ -63,7 +63,7 @@
         {  
             "title": "РОЛ КАЛІФОРНІЯ З ВУГРОМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "210",
             "amount": 1,
             "number": 8,
@@ -75,7 +75,7 @@
         {  
             "title": "РОЛ КАЛІФОРНІЯ З ТУНЦЕМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "210",
             "amount": 1,
             "number": 8,
@@ -87,7 +87,7 @@
         {  
             "title": "РОЛ В КУНЖУТІ З ТУНЦЕМ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "210",
             "amount": 1,
             "number": 8,
@@ -99,7 +99,7 @@
         {  
             "title": "ЧЕРВОНИЙ ДРАКОН",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "220",
             "amount": 1,
             "number": 8,
@@ -111,7 +111,7 @@
         {  
             "title": "ЧОРНИЙ ДРАКОН",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "220",
             "amount": 1,
             "number": 8,
@@ -123,7 +123,7 @@
         {  
             "title": "ЗЕЛЕНИЙ ДРАКОН",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "205",
             "amount": 1,
             "number": 8,
@@ -135,7 +135,7 @@
         {  
             "title": "КОРОЛІВСЬКИЙ ДРАКОН",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "220",
             "amount": 1,
             "number": 8,
@@ -147,7 +147,7 @@
         {  
             "title": "ЧІЛІ РОЛ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "250",
             "amount": 1,
             "number": 8,
@@ -159,7 +159,7 @@
         {  
             "title": "ЧОРНИЙ КРАБ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "225",
             "amount": 1,
             "number": 8,
@@ -171,7 +171,7 @@
         {  
             "title": "РОЛ НАГОЯ",
             "chapter": "roll",
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "225",
             "amount": 1,
             "number": 8,
@@ -184,12 +184,12 @@
             "title": "СЕТ ДРАКОНІВ",
             "chapter": "set",
             "contain": ["Червоний Дракон", "Чорний Дракон", "Зелений Дракон", "Королівський Дракон"],
-            "description": "Ролл Филадельфия — воплощение легкого и освежающего перекуса.",
+            "description": "",
             "weight": "890",
             "amount": 1,
             "number": 58,
             "price": 850,
-            "image": "https://osama.com.ua/wp-content/uploads/2022/11/600x600xBez-nazvy-2_Montazhna-oblast-1-kopiya-10.png.pagespeed.ic.Iq_BJ0onS0.png",
+            "image": "images/menu/dragon-set/main.jpg",
             "id": "dragon-set"
         },
         {
@@ -205,7 +205,7 @@
             "id": "lososeviy-set"
         },
         {
-            "title": "ФІРМОВИЙ СEN ASH",
+            "title": "ФІРМОВИЙ CЕТ ASH",
             "chapter": "set",
             "contain": ["Каліфорнія з лососем", "Рол Хіяші", "Канада рол", "Чідзу рол", "Ебі рол", "Краб рол Грін"],
             "description": "",
@@ -233,16 +233,16 @@
             "chapter": "set",
             "contain": ["Чорний в кунжуті", "Блек теріякі", "Чілі рол", "Чорний краб", "Рол Нагоя"],
             "description": "",
-            "weight": "1150",
+            "weight": "1225",
             "amount": 1,
-            "number": 48,
-            "price": 1400,
-            "image": "https://smakyaponiyi.com.ua/wp-content/uploads/2022/09/9-6.jpg",
-            "id": "ash-set"
+            "number": 40,
+            "price": 850,
+            "image": "images/menu/black-set/main.jpg",
+            "id": "black-set"
         },
         {
             "title": "ГУНКАН З ВАКАМЕ",
-            "chapter": "guncan",
+            "chapter": "sushi",
             "contain": ["Рис", "Вакаме"],
             "description": "",
             "weight": "70",
@@ -254,7 +254,7 @@
         },
         {
             "title": "ГУНКАН З ІКРОЮ",
-            "chapter": "guncan",
+            "chapter": "sushi",
             "contain": ["Рис", "Ікра"],
             "description": "",
             "weight": "70",
@@ -266,7 +266,7 @@
         },
         {
             "title": "ГУНКАН З ЛОСОСЕМ",
-            "chapter": "guncan",
+            "chapter": "sushi",
             "contain": ["Рис", "Ікра"],
             "description": "",
             "weight": "70",
@@ -278,7 +278,7 @@
         },
         {
             "title": "ГУНКАН З ТУНЦЕМ",
-            "chapter": "guncan",
+            "chapter": "sushi",
             "contain": ["Рис", "Ікра"],
             "description": "",
             "weight": "70",
@@ -290,7 +290,7 @@
         },
         {
             "title": "АСОРТІ (ЛОСОСЬ, ВУГОР, ТУНЕЦЬ)",
-            "chapter": "guncan",
+            "chapter": "sushi",
             "contain": ["Рис", "Ікра"],
             "description": "",
             "weight": "70",
@@ -335,6 +335,42 @@
             "price": 60,
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUjQpyT8NF2MoAX7--WVTqI0N5jDeLP465dgEhz2Z2Pkt6z2VArLrexZgmHcJI_BoJMI&usqp=CAU",
             "id": "sushi-tunec"
+        },
+        {
+            "title": "МАКІ З ОГІРКОМ",
+            "chapter": "maki",
+            "contain": ["Рис", "Огірок", "Норі"],
+            "description": "",
+            "weight": "140",
+            "amount": 1,
+            "number": 8,
+            "price": 90,
+            "image": "/images/menu/maki-cucumber/main.jpg",
+            "id": "maki-cucumber"
+        },
+        {
+            "title": "МАКІ З ЛОСОСЕМ",
+            "chapter": "maki",
+            "contain": ["Рис", "Лосось", "Норі"],
+            "description": "",
+            "weight": "140",
+            "amount": 1,
+            "number": 8,
+            "price": 140,
+            "image": "",
+            "id": "maki-salmon"
+        },
+        {
+            "title": "МАКІ З ТУНЦЕМ",
+            "chapter": "maki",
+            "contain": ["Рис", "Лосось", "Норі"],
+            "description": "",
+            "weight": "140",
+            "amount": 1,
+            "number": 8,
+            "price": 140,
+            "image": "/images/menu/maki-tunec/main.jpg",
+            "id": "maki-salmon"
         }
 
 
