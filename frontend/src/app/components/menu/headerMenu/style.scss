@@ -117,6 +117,7 @@
 }
 
 .mobile-title{
+    animation: title-fade-in 1s;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
@@ -137,5 +138,19 @@
         height: 4px;
         width: 100%;
         background-color: #C23231;
+    }
+
+    @keyframes title-fade-in {
+        from{
+            scale: 0.7;
+            opacity: 0;
+            translate: 0  -40%;
+
+        }
+        to{
+            scale: 1;
+            opacity: 1;
+            translate: 0;
+        }
     }
 }
