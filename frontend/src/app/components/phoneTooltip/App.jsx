@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PhoneInput from "react-phone-input-2"
 import { SERVER_ADRESS } from "../../../serverAdress";
 
@@ -7,11 +7,27 @@ export const App = ({dispose}) => {
     const [phone, setPhone] = useState("");
     const [final, setFinal] = useState(null)
 
+    const finalRef = useRef()
+
     const close = () => {
-        setTimeout(()=>{dispose()}, 2000)
+        setTimeout(()=>{
+            finalRef.current.style.animation = 'fade-out-tolltip 1S'
+            setTimeout(()=>{
+                dispose()
+            }, 1000)
+        }, 2000)
     }
 
     const sendPhone = () => {
+        if (!phone || phone.length < 10) {
+            // Поле не заполнено или содержит менее 10 символов
+            alert('Заповніть поле з номером телефону.');
+            return; // Останавливаем выполнение функции
+          }  if (!phone || phone.length < 10) {
+        // Поле не заполнено или содержит менее 10 символов
+        alert('Заповніть поле з номером телефону.');
+        return; // Останавливаем выполнение функции
+        }
         fetch(`${SERVER_ADRESS}/api/fast-call`, {
             method: 'POST',
               headers: {
@@ -32,7 +48,7 @@ export const App = ({dispose}) => {
     return (
         <div className="phoneTooltip">
                 {
-                    final ? <div className="phoneTooltip-content__final">{final}</div>
+                    final ? <div ref={finalRef} className="phoneTooltip-content__final">{final}</div>
 
                     :
 

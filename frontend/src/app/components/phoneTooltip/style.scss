@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    animation: fade-in-tolltip 1s;
 
     &-content{
         z-index: 1000 !important;
@@ -32,7 +32,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #2d6979;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
             height: 90%;
             width: 90%;
             border-radius: 10px;
@@ -91,5 +92,30 @@
                 border-radius: 20px;
             }
         }
+    }
+
+    @keyframes fade-in-tolltip {
+        from{
+            translate: 0 100%;
+            // opacity: 0;
+        }
+        to{
+            translate: 0;
+            // opacity: 1;
+        }
+
+    }
+    @keyframes fade-out-tolltip {
+        from{
+        
+            // opacity: 0;
+            translate: 0;
+        }
+        to{
+            translate: 0;
+            translate: 0 100%;
+            // opacity: 1;
+        }
+
     }
 }

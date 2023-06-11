@@ -115,7 +115,7 @@ export default function ContactForm () {
             />
             <PhoneInput
                 country={'ua'}
-                value={'(050) 687-59-30'}
+                // value={'(050) 687-59-30'}
                 onChange={phone => setPhone({ phone })}
             />
             <div className="contactForm-deliveryType">

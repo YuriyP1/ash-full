@@ -105,7 +105,7 @@
             "number": 8,
             "price": 260,
             "contain": ["Лосось", "Вугор", "Огірок", "Японський майонез", "Ікра тобіко", "Хіяші", "Рис", "Норі"],
-            "image": "",
+            "image": "images/menu/red-dragon/main.jpg",
             "id": "roll-red-dragon"
         },
         {  
@@ -153,7 +153,7 @@
             "number": 8,
             "price": 155,
             "contain": ["Лосось", "Сир філадельфія", "Огірок", "Перець болгарський", "Перець чилі", "Аджика", "Рис з чорнилами каракатиці", "Норі"],
-            "image": "",
+            "image": "images/menu/chili-roll/main.jpg",
             "id": "roll-chili"
         },
         {  
@@ -172,13 +172,121 @@
             "title": "РОЛ НАГОЯ",
             "chapter": "roll",
             "description": "",
+            "weight": "220",
+            "amount": 1,
+            "number": 8,
+            "price": 170,
+            "contain": ["Лосось", "Тунець", "Авокадо", "Крем сир", "Ікра тобіко", "Рис з чорнилами каракатиці", "Норі"],
+            "image": "images/menu/nagoya-roll/main.jpg",
+            "id": "roll-nagoya"
+        },
+        {  
+            "title": "ЕБІ РОЛ",
+            "chapter": "roll",
+            "description": "",
             "weight": "225",
             "amount": 1,
             "number": 8,
+            "price": 185,
+            "contain": ["Тигрова креветка", "Панка", "Сир Філадельфія", "Стружка тунця", "Японський майонез", "Рис", "Норі"],
+            "image": "images/menu/ebi-roll/main.jpg",
+            "id": "roll-ebi"
+        },
+        {  
+            "title": "ТЕРІЯКІ БЛЕК",
+            "chapter": "roll",
+            "description": "",
+            "weight": "320",
+            "amount": 1,
+            "number": 8,
+            "price": 240,
+            "contain": ["Вугор", "Лосось", "Авокадо", "Сир Філадельфія", "Соус теріякі", "Рис з чорнилами каракатиці", "Норі"],
+            "image": "images/menu/teriyaki-black/main.jpg",
+            "id": "roll-teriyaki-black"
+        },
+        {  
+            "title": "ХІЯШІ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "255",
+            "amount": 1,
+            "number": 8,
+            "price": 125,
+            "contain": ["Сир Філадельфія", "Краб", "Тигрова креветка", "Водорослі Хіяші", "Ікра тобіко", "Рис", "Норі"],
+            "image": "images/menu/hiyashi/main.jpg",
+            "id": "roll-hiyashi"
+        },
+        {  
+            "title": "РОЛ КРАБОВИЙ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "000",
+            "amount": 1,
+            "number": 8,
+            "price": 80,
+            "contain": ["Краб", "Японський майонез", "Ікра тобіко", "Огірок", "Рис", "Норі"],
+            "image": "images/menu/crab-roll/main.jpg",
+            "id": "roll-crab"
+        },
+        {  
+            "title": "ЗАПЕЧЕНИЙ РОЛ З ЛОСОСЕМ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "235",
+            "amount": 1,
+            "number": 8,
             "price": 140,
-            "contain": ["Крабове м’ясо", "Ікра тобіко", "Сир філадельфія", "Авокадо", "Рис з чорнилами каракатиці", "Норі"],
-            "image": "",
-            "id": "roll-black-crab"
+            "contain": ["Лосось", "Авокадо", "Японський", "Майонез", "Сир", "Філадельфія", "Соус", "Теріякі", "Рис", "Норі"],
+            "image": "images/menu/grill-roll-salmon/main.jpg",
+            "id": "grill-roll-salmon"
+        },
+        {  
+            "title": "ЧІДЗУ РОЛ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "215",
+            "amount": 1,
+            "number": 8,
+            "price": 180,
+            "contain": ["Лосось жарений", "Огірок", "Сир Філадельфія", "Сир Чедер", "Ікра Тобіко", "Укроп", "Рис", "Норі"],
+            "image": "images/menu/chidzu-roll/main.jpg",
+            "id": "chidzu-roll"
+        },
+        {  
+            "title": "ЧОРНИЙ РОЛ В КУНЖУТІ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "190",
+            "amount": 1,
+            "number": 8,
+            "price": 210,
+            "contain": ["Лосось", "Угорь", "Японський майонез", "Огірок", "Рис", "Норі"],
+            "image": "images/menu/roll-black-kunjut/main.jpg",
+            "id": "chidzu-roll"
+        },
+        {  
+            "title": "СМАЖЕНИЙ РОЛ З ВУГРЕМ",
+            "chapter": "roll",
+            "description": "",
+            "weight": "160",
+            "amount": 1,
+            "number": 8,
+            "price": 135,
+            "contain": ["Сир Філадельфія", "Огірок", "Вугор", "Кляр", "Панка", "Рис", "Норі"],
+            "image": "images/menu/roll-grill-vugor/main.jpg",
+            "id": "chidzu-roll"
+        },
+        {  
+            "title": "РОЛЛ ТАРТАР",
+            "chapter": "roll",
+            "description": "",
+            "weight": "260",
+            "amount": 1,
+            "number": 8,
+            "price": 115,
+            "contain": ["Запечене куряче філе", "Лист салату", "Соус цезар", "Панка", "Сир Пармезан", "Рис", "Норі"],
+            "image": "images/menu/roll-tartar/main.jpg",
+            "id": "tartar-roll"
         },
         {
             "title": "СЕТ ДРАКОНІВ",
@@ -249,7 +357,7 @@
             "amount": 1,
             "number": 1,
             "price": 60,
-            "image": "https://kyiv.smaki-maki.com/wp-content/uploads/sites/10/2020/06/gunkan-z-hiyashi-vakame-scaled.jpg",
+            "image": "images/menu/guncan-vacame/main.jpg",
             "id": "vacame-gunkan"
         },
         {
@@ -273,7 +381,7 @@
             "amount": 1,
             "number": 1,
             "price": 60,
-            "image": "https://sushifan.com.ua/image/cache/catalog/gunkan_B/Gunkan_ikura-500x500.jpg",
+            "image": "images/menu/guncan-salmon/main.jpg",
             "id": "salmon-gunkan"
         },
         {

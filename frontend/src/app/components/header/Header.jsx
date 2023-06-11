@@ -6,7 +6,10 @@ import { Link } from 'react-router-dom'
 
 import './style.scss'
 import phoneTooltip, { disposePhoneTooltip } from '../phoneTooltip'
+import FullMenu from '../fullMenu/FullMenu'
 
+export let setSection
+export let openCloseMenu
 const Header = ({ asideBar }) =>{
 
     const windowSize = useWindowSize()
@@ -17,6 +20,15 @@ const Header = ({ asideBar }) =>{
     const count = useSelector(state => state.store.count)
 
     const countRef = useRef()
+    
+    openCloseMenu = () => {
+        if(isFullMenu){
+            setFullMenu(false)
+        }
+        else {
+            setFullMenu(true)
+        }
+    }
 
     useEffect(()=>{
         countRef.current.style.animation = "countAnimation 1s forwards"
@@ -33,9 +45,11 @@ const Header = ({ asideBar }) =>{
 
 
     const dispatch = useDispatch()
+    const closeMenu = () => {
+       
+    }
 
-    const setSection = (section) => {
-        // disposeFullCar(null)
+    setSection = (section) => {
         if(isFullMenu){
             setFullMenu(false)
         }
@@ -64,14 +78,15 @@ const Header = ({ asideBar }) =>{
     }
 
     return(
-        <div className={`header limitWidthHeader fix ${style ? 'bg' : null}`}
+        <>
+                    <div className={`header limitWidthHeader fix ${style ? 'bg' : ''}`}
             ref={header}    
         >
             <div className="header-content">
                 {
                     windowSize.width < 1180 &&
                     <div className="header-content-mobNav"
-                        onClick={()=>{ isFullMenu ? setFullMenu(false) : setFullMenu(true)}}
+                        onClick={openCloseMenu}
                     >
                         <div className="header-content-mobNav__line"></div>
                         <div className="header-content-mobNav__line"></div>
@@ -79,20 +94,10 @@ const Header = ({ asideBar }) =>{
                         <div className="header-content-mobNav__line"></div>
                     </div>
                 }
-                {
-                    isFullMenu && 
-                    <div className="header-content-fullMenu">
-                        <h2>MENU</h2>
-                        <p onClick={()=>{setSection("РОЛИ")}}>РОЛИ</p>
-                        <p onClick={()=>{setSection("СУШІ")}}>СУШІ</p>
-                        <p onClick={()=>{setSection("СЕТИ")}}>СЕТИ</p>
-                        <h2>MENU</h2>
-                    </div>
-                }
                 <Link to='' className="header-content-logo center">
-                    ASH
+                    <Icons icon={'logo'}/>
                 </Link>
-                {
+                  {
                     windowSize.width > 1180 &&
                     <nav className='header-content-nav'>
                         <ul>
@@ -123,6 +128,9 @@ const Header = ({ asideBar }) =>{
                 </div>
             </div>
         </div>
+        <FullMenu isActive={isFullMenu}/>
+        </>
+
     )
 }
 
