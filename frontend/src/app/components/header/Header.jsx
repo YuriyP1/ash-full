@@ -24,9 +24,11 @@ const Header = ({ asideBar }) =>{
     openCloseMenu = () => {
         if(isFullMenu){
             setFullMenu(false)
+            
         }
         else {
             setFullMenu(true)
+           
         }
     }
 
@@ -50,6 +52,7 @@ const Header = ({ asideBar }) =>{
     }
 
     setSection = (section) => {
+        document.getElementById('menu').scrollIntoView();
         if(isFullMenu){
             setFullMenu(false)
         }
