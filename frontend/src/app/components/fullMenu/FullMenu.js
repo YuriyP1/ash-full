@@ -12,7 +12,7 @@ export default function FullMenu ({isActive}) {
             <Link to="/" onClick={()=>{setSection("СУШІ")}}>СУШІ</Link>
             <Link to="/" onClick={()=>{setSection("СЕТИ")}}>СЕТИ</Link>
             <h2>О НАС</h2>
-            <Link to="/delivery">
+            <Link to="/delivery" onClick={()=>{setSection("")}}>
                 ДОСТАВКА
             </Link>
             <h4>

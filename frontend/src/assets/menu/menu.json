@@ -165,7 +165,7 @@
             "number": 8,
             "price": 140,
             "contain": ["Крабове м’ясо", "Ікра тобіко", "Сир філадельфія", "Авокадо", "Рис з чорнилами каракатиці", "Норі"],
-            "image": "",
+            "image": "images/menu/roll-black-crab/main.jpg",
             "id": "roll-black-crab"
         },
         {  
@@ -262,7 +262,7 @@
             "price": 210,
             "contain": ["Лосось", "Угорь", "Японський майонез", "Огірок", "Рис", "Норі"],
             "image": "images/menu/roll-black-kunjut/main.jpg",
-            "id": "chidzu-roll"
+            "id": "black-roll-kunzhut"
         },
         {  
             "title": "СМАЖЕНИЙ РОЛ З ВУГРЕМ",
@@ -274,7 +274,7 @@
             "price": 135,
             "contain": ["Сир Філадельфія", "Огірок", "Вугор", "Кляр", "Панка", "Рис", "Норі"],
             "image": "images/menu/roll-grill-vugor/main.jpg",
-            "id": "chidzu-roll"
+            "id": "grill-roll-ugor"
         },
         {  
             "title": "РОЛЛ ТАРТАР",
@@ -465,7 +465,7 @@
             "amount": 1,
             "number": 8,
             "price": 140,
-            "image": "",
+            "image": "/images/menu/maki-salmon/main.jpg",
             "id": "maki-salmon"
         },
         {
@@ -478,7 +478,7 @@
             "number": 8,
             "price": 140,
             "image": "/images/menu/maki-tunec/main.jpg",
-            "id": "maki-salmon"
+            "id": "maki-tunec"
         }
 
 

@@ -10,6 +10,7 @@ import './style.scss'
 import './style.scss'
 import { useRef } from 'react';
 import useWindowSize from '../../hook/resizeWindow';
+import { Link } from 'react-router-dom';
 // extend({ OrbitControls })
 const Banner = () =>{
     // const { camera, gl } = useThree()
@@ -41,71 +42,69 @@ const Banner = () =>{
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide>
-                        <div className='banner-container'>
-                            <div className="banner-content">
-                                <div>
-                                <span>СУШІ В <span className='FB9950'> ASH </span></span>
-                                ДОСТАВЩИК <br/>
-                                <span></span>ВАШ
-                                </div>
-                                <div className="banner-visual" id='canvas__root'>
-                                {
-                            width < 1180 &&
-                            <video autoPlay loop muted>
-                                <source src="banners/video-banner-set.mp4" type="video/mp4" />
-                            </video>
-                        }
-                            </div>
-                                <div className='banner-content__btn'>
-                                    ЗІБРАТИ КОШИК
-                                </div>
-                            </div>
-                                {
-                                    width > 1180 &&
-                                    <div className="banner-visual centered" id='canvas__root'>
 
-                                    <video autoPlay loop muted>
-                                        <source src="banners/video-banner-set.mp4" type="video/mp4" />
-                                    </video>
-                                    </div>
-                                }
-                    
-                                {/* <img className="banner-visual__image" src='images/banner/banner-image.png'/> */}
-                            
-                        </div>
-                        <div className="banner-visual" id='canvas__root'>
-                
-                                {/* <img className="banner-visual__image" src='images/banner/banner-image.png'/> */}
-                        </div> 
-                    </SwiperSlide>
                     <SwiperSlide >
-                    <div className="container">
-                        {
-                            width > 1180 
-                            ?
-                            <div className="desktop">
-                            <div className="left">
-                            <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
-                            <p>64 шт 1200 грн</p>
-                            <button>В КОРЗИНУ</button>
-                            </div>
-                            <div className="right">
-                                <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop />
-                            </div>
-                            </div>
-                            :
-                            <div className="mobile">
-                                                        <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
-
-                            <p>64 шт 1200 грн</p>
-                            
-                            <div className="video-container">
-                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
-                            </div>
-                            <button>У КОШИК</button>
+                        <div className="container">
+                            {
+                                width > 1180 ?
+                                    <div className="desktop">
+                                        <div className="left">
+                                            <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
+                                            <p>64 шт 1200 грн</p>
+                                            <Link to="/product/dragon-set" className='button'>
+                                                У КОШИК
+                                            </Link>
+                                        </div>
+                                        <div className="right">
+                                        <div className="video-container">
+                                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
+                                        </div>                                        </div>
+                                    </div>  
+                                    :
+                                    <div className="mobile">
+                                        <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
+                                        <p>64 шт 1200 грн</p>
+                                        
+                                        <div className="video-container">
+                                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
+                                        </div>
+                                        <Link to="/product/dragon-set" className='button'>
+                                            У КОШИК
+                                        </Link>
+                                    </div>
+                            }
                         </div>
-                        }
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="container">
+                            {
+                                width > 1180 ?
+                                    <div className="desktop">
+                                        <div className="left">
+                                            <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
+                                            <p>64 шт 1200 грн</p>
+                                            <Link to="/product/dragon-set" className='button'>
+                                                У КОШИК
+                                            </Link>
+                                        </div>
+                                        <div className="right">
+                                        <div className="video-container">
+                                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
+                                        </div>                                        </div>
+                                    </div>  
+                                    :
+                                    <div className="mobile">
+                                        <h2>SET <span className='FB9950'>'ДРАКОНІВ'</span>: магія смаку у кожному ковтку!</h2>
+                                        <p>64 шт 1200 грн</p>
+                                        
+                                        <div className="video-container">
+                                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
+                                        </div>
+                                        <Link to="/product/dragon-set" className='button'>
+                                            У КОШИК
+                                        </Link>
+                                    </div>
+                            }
                         </div>
                     </SwiperSlide>
                     <div className="autoplay-progress" slot="container-end">

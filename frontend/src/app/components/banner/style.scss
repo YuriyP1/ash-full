@@ -72,6 +72,10 @@
             object-fit: cover;
         }
 
+        .mob{
+
+        }
+
     }
 
     .swiper{
@@ -154,17 +158,23 @@
         padding-left: 10px;
         margin: 10px;
         border-left: 4px red solid;
+
+        @media (max-width:1180px) {
+          margin-bottom: 30px;
+          margin-left: 25px;
+        }
       }
       
-      button {
+      .button {
+        text-decoration: none;
         border: 1px solid #FFFFFF;
         background-color: #ffffff19;
         box-shadow: 0px 0px 14px 7px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        padding: 30px 30px 30px 30px;
+        padding: 30px 5px;
         width: 50%;
         font-weight: 300;
-        font-size: 23px;
+        font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,6 +184,9 @@
         margin-top: 50px;
         color: #FFFFFF;
 
+        @media (max-width: 1180px) {
+          width: 90%;
+        }
         cursor: pointer;
       }
       
@@ -188,6 +201,10 @@
         overflow: hidden;
 
         height: 400px;
+
+        @media (min-width: 1180px) {
+          height: 100%;
+        }
       }
       
       video {

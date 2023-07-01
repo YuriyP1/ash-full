@@ -28,7 +28,7 @@ const AsideBarCard = ({ image, title, price, description, weight, amount, id }) 
     return(
         <div className='asideBarCard'>
             <div className="asideBarCard-imageWrap">
-                <img src={image} alt="image" />
+                <img src={`https://sushi-time-mrh.com/${image}`} alt="image" />
             </div>
             <div className="asideBarCard-content">
                 <div className="asideBarCard-title">

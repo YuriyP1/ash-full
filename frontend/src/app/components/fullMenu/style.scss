@@ -21,6 +21,9 @@
     // pointer-events: none;
 
  
+    svg{
+      max-width: 200px;
+    }
     &.active{
         translate: 0;
     }
