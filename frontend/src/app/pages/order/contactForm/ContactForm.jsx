@@ -8,7 +8,14 @@ import 'react-phone-input-2/lib/style.css'
 import './style.scss'
 import { useSelector } from 'react-redux';
 import { SERVER_ADRESS } from '../../../../serverAdress';
+import thankyouPopup from '../../../components/thankyouPopup';
+import { Link } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
 export default function ContactForm () {
+
+  const navigate = useNavigate();
 
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -51,9 +58,11 @@ export default function ContactForm () {
         },
         body: JSON.stringify(contactData)
       }) 
-      .then(response => response.json())
+      .then(response => response.text())
       .then(contactData => {
         console.log('Успех:', contactData);
+        navigate('/');
+        thankyouPopup(contactData)
       })
       .catch((error) => {
         console.error('Ошибка:', error);
@@ -171,8 +180,9 @@ export default function ContactForm () {
                 :
                 <></>
             }
-
-            <button type="submit" onClick={send}>Отправить</button>
+            {/* <Link to="/"> */}
+              <button type="submit" onClick={send}>Отправить</button>
+            {/* </Link> */}
             {errorMessage && <div className='error'>{errorMessage}</div>}
         </form>
         

@@ -80,7 +80,8 @@ ${result}
     )
 
 
-  res.send('POST запрос принят');
+  // res.send('POST запрос принят');
+  res.status(200).send("Дякуємо за замовлення! Ми скоро зв'яжемось!");
 });
 
 app.post('/api/fast-call', (req, res) => {

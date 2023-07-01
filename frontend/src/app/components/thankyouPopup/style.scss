@@ -1,0 +1,46 @@
+.thank-you-page{
+    animation: fade-in-tolltip 1s;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 30vh;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 4vw;
+    z-index: 1000;
+
+    @media (min-width: 1180px) {
+        font-size: 3vw;
+    }
+
+    @keyframes fade-in-tolltip {
+        from{
+            translate: 0 120%;
+            // opacity: 0;
+        }
+        to{
+            translate: 0;
+            // opacity: 1;
+        }
+
+    }
+
+    @keyframes fade-out-tolltip-thanks {
+        from{
+        
+            // opacity: 0;
+            translate: 0;
+        }
+        to{
+            translate: 0;
+            translate: 0 120%;
+            // opacity: 1;
+        }
+
+    }
+}

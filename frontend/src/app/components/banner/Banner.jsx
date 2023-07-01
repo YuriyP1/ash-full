@@ -11,6 +11,7 @@ import './style.scss'
 import { useRef } from 'react';
 import useWindowSize from '../../hook/resizeWindow';
 import { Link } from 'react-router-dom';
+import { SERVER_ADRESS } from '../../../serverAdress';
 // extend({ OrbitControls })
 const Banner = () =>{
     // const { camera, gl } = useThree()
@@ -66,7 +67,7 @@ const Banner = () =>{
                                         <p>64 шт 1200 грн</p>
                                         
                                         <div className="video-container">
-                                            <video src="banners/video-banner-set.mp4" autoPlay controls={false} muted loop/>
+                                            <video src={`${SERVER_ADRESS}/banners/video-banner-set.mp4`} autoPlay controls={false} playsInline muted loop/>
                                         </div>
                                         <Link to="/product/dragon-set" className='button'>
                                             У КОШИК
