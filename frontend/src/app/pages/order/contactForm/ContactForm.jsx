@@ -97,7 +97,8 @@ export default function ContactForm () {
 
 
     const handleDeliveryTypeChange = (e) => {
-      setDeliveryType(e.target.value);
+      console.log(e)
+      setDeliveryType(e);
     };
 
     const send = () =>{
@@ -113,13 +114,16 @@ export default function ContactForm () {
 
     return (
         <form onSubmit={handleSubmit} className="contactForm">
-            <label htmlFor="name">Ім'я</label>
+             {/* <div className='title'>
+              Форма швидкого замовлення
+             </div> */}
+            {/* <label htmlFor="name">Форма швидкого замовлення</label> */}
             <input
                 className='contactForm-input'
                 type="text"
                 id="name"
                 value={name}
-                placeholder="Ім'я*"
+                placeholder="Ім'я"
                 onChange={(event) => setName(event.target.value)}
             />
             <PhoneInput
@@ -128,7 +132,17 @@ export default function ContactForm () {
                 onChange={phone => setPhone({ phone })}
             />
             <div className="contactForm-deliveryType">
-                <label>
+              <div className={`first center ${deliveryType === 'Доставка' ? "active" : ''}`}
+                onClick={()=>handleDeliveryTypeChange("Доставка")}
+              >
+                Доставка
+              </div>
+              <div className={`second center ${deliveryType === 'Самовивіз' ? "active" : ''}`}
+                onClick={()=>handleDeliveryTypeChange("Самовивіз")}
+              >
+                Самовивіз
+              </div>
+                {/* <label>
                     <input
                         type="radio" 
                         value="Доставка"
@@ -136,8 +150,8 @@ export default function ContactForm () {
                         onChange={handleDeliveryTypeChange}
                     />
                     <p>Доставка</p>
-                </label>
-                <label>
+                </label> */}
+                {/* <label>
                     <input
                         type="radio"
                         value="Самовивіз"
@@ -145,8 +159,11 @@ export default function ContactForm () {
                         onChange={handleDeliveryTypeChange}
                     />
                     <p>Самовывоз</p>
-                </label>
+                </label> */}
             </div>
+            {/* <br /> */}
+    
+            <br />
             {
                 deliveryType === 'Доставка' ? 
                 <>
@@ -176,12 +193,15 @@ export default function ContactForm () {
                             onChange={(event) => setEntrance(event.target.value)}
                         />
                     </div>
+                    <div className='cost'>
+                      Вартість доставки {store.store.sum > 500 ? 0 : 60} грн
+                    </div>
                 </>
                 :
                 <></>
             }
             {/* <Link to="/"> */}
-              <button type="submit" onClick={send}>Отправить</button>
+              <button type="submit" onClick={send}>Замовити</button>
             {/* </Link> */}
             {errorMessage && <div className='error'>{errorMessage}</div>}
         </form>

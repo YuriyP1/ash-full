@@ -12,6 +12,7 @@
 
     height: 86px;
     color: white;
+    
 
     li{
         font-family: 'Montserrat';
@@ -128,6 +129,11 @@
             svg{
                 max-width: 130px;
             }
+            img{
+                max-width: 130px;
+            }
+
+
             @media (max-width: 1180px) {
                 margin-left: 20px;
                 width: 30%;

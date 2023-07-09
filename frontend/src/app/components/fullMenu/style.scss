@@ -24,6 +24,11 @@
     svg{
       max-width: 200px;
     }
+    img{
+      max-width: 200px;
+
+      margin-top: 50px;
+    }
     &.active{
         translate: 0;
     }
@@ -54,7 +59,7 @@
     }
 
 
-    h4{
+    h3{
         text-align: center;
         margin-top: 20px;
      
@@ -68,7 +73,7 @@
         cursor: pointer;
         position: absolute;
         top: 20px;
-        left: 20px;
+        right: 20px;
       }
       
       .line {

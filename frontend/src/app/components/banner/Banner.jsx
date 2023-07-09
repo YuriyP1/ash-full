@@ -67,7 +67,7 @@ const Banner = () =>{
                                         <p>64 шт 1200 грн</p>
                                         
                                         <div className="video-container">
-                                            <video src={`${SERVER_ADRESS}/banners/video-banner-set.mp4`} autoPlay controls={false} playsInline muted loop/>
+                                            {/* <video src={`${SERVER_ADRESS}/banners/video-banner-set.mp4`} autoPlay controls={false} playsInline muted loop/> */}
                                         </div>
                                         <Link to="/product/dragon-set" className='button'>
                                             У КОШИК

@@ -2,7 +2,14 @@ import { Link } from "react-router-dom"
 import Icons from "../../../assets/icons/Icons"
 import { openCloseMenu, setSection } from "../header/Header"
 import "./style.scss"
+
 export default function FullMenu ({isActive}) {
+
+    const delay = (string) => {
+        setTimeout(()=>{
+            setSection(string)
+        },100)
+    }
     return (
         <div className={`fullMenu ${isActive ? 'active': ''}`}>
             <Icons icon={'logo'}/>
@@ -15,14 +22,14 @@ export default function FullMenu ({isActive}) {
             <Link to="/delivery" onClick={()=>{setSection("")}}>
                 ДОСТАВКА
             </Link>
-            <h4>
+            <h3>
                 ПРАЦЮЄМО<br />
                 З 9:00 по 22:00<br /><br />
-                <h3>050 456-00-05</h3>
-            </h4>
-            <div class="close-button" onClick={openCloseMenu}> 
-                <span class="line"></span>
-                <span class="line"></span>
+                050 456-00-05
+            </h3>
+            <div className="close-button" onClick={openCloseMenu}> 
+                <span className="line"></span>
+                <span className="line"></span>
             </div>
         </div>
     )

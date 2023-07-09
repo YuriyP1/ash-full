@@ -110,7 +110,7 @@ const HeaderMenu = ({disposeFullCard}) => {
                     className="ecosystem-filter-change__input"
                     ref={input}
                     onChange={e =>{setSearchTerm(e.target.value)}}
-                    placeholder="Search"
+                    placeholder="Пошук"
                     type='text'
                 />
                 </div>

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Icons from '../../../assets/icons/Icons'
 import useWindowSize from '../../hook/resizeWindow'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import './style.scss'
 import phoneTooltip, { disposePhoneTooltip } from '../phoneTooltip'
@@ -20,6 +20,9 @@ const Header = ({ asideBar }) =>{
     const count = useSelector(state => state.store.count)
 
     const countRef = useRef()
+
+    const location = useLocation();
+    const currentPath = location.pathname;
     
     openCloseMenu = () => {
         if(isFullMenu){
@@ -52,7 +55,15 @@ const Header = ({ asideBar }) =>{
     }
 
     setSection = (section) => {
-        document.getElementById('menu').scrollIntoView();
+        console.log(currentPath)
+        if(currentPath === '/delivery'){
+            setTimeout(()=>{
+                document.getElementById('menu').scrollIntoView();
+            }, 300)
+        } else {
+            document.getElementById('menu').scrollIntoView();
+        }
+    
         if(isFullMenu){
             setFullMenu(false)
         }
@@ -105,14 +116,14 @@ const Header = ({ asideBar }) =>{
                     <nav className='header-content-nav'>
                         <ul>
                             <li><Link to={'/delivery'}>ДОСТАВКА</Link></li>
-                            <li>О НАС</li>
-                            <li>О НАС</li>
+                            {/* <li>О НАС</li>
+                            <li>О НАС</li> */}
                         </ul>
                     </nav>
                 }
                 {
                     windowSize.width > 1180 ? <div className='header-content-phone center'>
-                    +380 (050) 687-59-30
+                    +38 (050) 456-00-05
                     </div>
                     :
                     <div className='header-content-phone center'
